@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title> I EDUCATE JARO EDUCATION TRANSFORMING THE STUDY</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <style>
+        .left
+        {
+        height: 150px;
+        width: 50%;
+        background-color: aqua;    
+        float: left;
+        }
+        .right
+        {
+        height: 150px;
+        width: 50%;
+        background-color: brown;    
+        float: left;
+        }
+        .r1
+        {
+            margin-left: 370px;
+            margin-top: 40px;
+        }
+        .logo{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .logo img{
+            width: 33%;
+            }
+            .navlist
+            {
+                flex-wrap: wrap;
+            }
+            .nav
+            {
+                float: left;
+            
+            }
+            .nav-item
+            {
+                float: left;
+                padding: 70px;
+                margin-top: -130px;
+            }
+            .nav-link
+            {
+                text-decoration: none;
+                font-size: 30px;
+                color: black;
+            }
+            .logo
+            {
+                margin-top: 10px;
+                float: left;
+            }
+            .logo1,h1
+            {
+                float: left;
+                font-size: 50px;
+                margin-top: -1px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a:hover .nav
+            {
+                zoom: 1;
+                background-color: aquamarine
+                cornflowerblue}
+
+            a:active{
+                background-color: tomato;
+                color: blue;
+            }
+          
+    </style>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,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">;
+    
+    <nav class="navbar">
+
+       <div class="main">
+
+        <div class="left">
+            <div class="logo"><img src="img/1.png" alt="logo"></div>
+            <div class="logo1">
+                <h1 font style="font-family:cursive ;text-shadow: 25px 20px 2px red;">Jaro Education</h1>
+            </div>
+        </div>
+    
+            <div class="right">
+                <div class="r1">
+                    <input type="text" name="search" id="search">
+                    <button class="btn btn sm " background color="aqua" >search</button>
+                </div>
+            </div>
+       </div>
+      
+       <div class="container">
+        <div class="nav">
+        
+            <div class="nav-item"><a class="nav-link" href="#">Home</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">About</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Categories</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Menu</a></div>
+            <div class="nav-item"><a class="nav-link" href="#">Service</a></div>
+         </div>
+         <div class="bottom"  >
+             <img src="13.jpg" width="100%";height="20% ;>
+             </div>
+             </div>
+         
+        
+    </nav>
+  
+</body>
+</html>
